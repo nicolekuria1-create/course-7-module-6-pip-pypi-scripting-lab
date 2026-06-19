@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Generated lab outputs
+log_*.txt
+api_post_title.txt
+tasks.json
