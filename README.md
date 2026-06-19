@@ -146,3 +146,40 @@ After completing this lab, you will:
 ✅ Structure projects for portability and collaboration
 
 These scripting and packaging skills are essential for building automation tools and working in modern Python development workflows.
+
+## Lab Solution Commands
+
+Run these commands from the repository root:
+
+```bash
+python --version
+pip --version
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Generate logs and API output:
+
+```bash
+python generate_log.py
+```
+
+This writes:
+
+- `log_YYYYMMDD.txt` from `lib/generate_log.py`
+- `api_post_title.txt` from the `requests` API call
+
+Use the OOP task CLI:
+
+```bash
+python task_cli.py add-task --user nicole --description "Review submission"
+python task_cli.py complete-task --id 1
+```
+
+## Best Practices Used
+
+- Script logic is wrapped in `if __name__ == "__main__":` blocks.
+- Functions and classes separate concerns for easy testing and reuse.
+- Dependencies are tracked in `requirements.txt` for reproducibility.
+- Output files are created with predictable names to simplify automation.
